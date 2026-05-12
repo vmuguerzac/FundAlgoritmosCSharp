@@ -1,30 +1,14 @@
 
-public class s6_alcance_var
+int cont = 100; // variable local del main
+cont++;
+Contar();
+Contar();
+Contar();
+Console.WriteLine("Var cont de Main: " + cont);
+
+void Contar()
 {
-    static int x = 10;
-    public static void Main(string[] args)
-    {
-        
-        Console.WriteLine("Valor inicial x: " + x);
-        AgregarValorA();
-        AgregarValorB();
-        AgregarValorC();
-        Console.WriteLine("Valor final x: " + x);
-    }
-
-    static void AgregarValorA()
-    {
-        x = x + 1;
-    }
-
-    static void AgregarValorB()
-    {
-        x = x + 1;
-    }
-
-    static void AgregarValorC()
-    {
-        x = x + 1;
-    }
+    int cont = 0; // Variable local de la funcion
+    cont++; // suma 1 a la varible local
+    Console.WriteLine("Var cont de Funcion: " + cont);
 }
-
